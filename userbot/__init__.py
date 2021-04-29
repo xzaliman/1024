@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/mrismanaziz/Man-Userbot.git")
+    "https://github.com/xzaliman/1024.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Man-Userbot")
+    "UPSTREAM_REPO_BRANCH", "main")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -332,7 +332,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```🔥✘ Man-Userbot Berhasil Di Aktifkan ✘🔥```")
+    await bot.send_message(BOTLOG_CHATID, "```🔥 Userbot Berhasil Di Aktifkan 🔥```")
     return
 
 with bot:
@@ -403,20 +403,20 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply(f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"f"      __Thanks For Using me__\n\n"f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n")
+                await event.reply(f"**Hey**, __I am using__ 🔥 **Userbot** 🔥\n\n"f"      __Thanks For Using me__\n\n"f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"f"✣ **Group Support :** [Userbot](t.me/GrupCinta)\n"f"✣ **Owner Repo :** [A5N](t.me/xz5pd)\n"f"✣ **Repo :** [Userbot](https://github.com/xzaliman/1024)\n")
             else:
-                await event.reply(f"**Hey**, __I am using__ 🔥 **Man-Userbot** 🔥\n\n"f"      __Thanks For Using me__\n\n"f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"f"✣ **Group Support :** [Sharing Userbot](t.me/sharinguserbot)\n"f"✣ **Owner Repo :** [Risman](t.me/mrismanaziz)\n"f"✣ **Repo :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n")
+                await event.reply(f"**Hey**, __I am using__ 🔥 **Userbot** 🔥\n\n"f"      __Thanks For Using me__\n\n"f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"f"✣ **Group Support :** [Userbot](t.me/GrupCinta)\n"f"✣ **Owner Repo :** [A5N](t.me/xz5pd)\n"f"✣ **Repo :** [Userbot](https://github.com/xzaliman/1024)\n")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@UserButt"):
+            if event.query.user_id == uid and query.startswith("@xz5pd"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Man-Userbot :** \n".format(
+                    text="{}\n\n**✥ Jumlah Module Yang Tersedia :** `{}` **Module**\n               \n**✥ Daftar Modul Userbot :** \n".format(
                         "**✗ Man-Userbot Main Menu ✗**",
                         len(dugmeler),
                     ),
@@ -426,33 +426,33 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Man - Userbot",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository Userbot",
+                    url="https://t.me/GrupCinta",
+                    text="**UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [A5N](https://t.me/xz5pd)\n✣ **Grup Support :** @GrupCinta \n✣ **Repository :** [Userbot](https://github.com/xzaliman/1024)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/GrupCinta"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/xzaliman/1024")],
                     ],
                     link_preview=False)
             else:
                 result = builder.article(
-                    title="✗ Man-Userbot ✗",
-                    description="Man - UserBot | Telethon",
-                    url="https://t.me/SharingUserbot",
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Grup Support :** @SharingUserbot\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    title="✗ Userbot ✗",
+                    description="UserBot | Telethon",
+                    url="https://t.me/GrupCinta",
+                    text="**UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [A5N](https://t.me/xz5pd)\n✣ **Grup Support :** @GrupCinta \n✣ **Repository :** [Userbot](https://github.com/xzaliman/1024)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Support",
-                                "https://t.me/SharingUserbot"),
+                                "https://t.me/GrupCinta"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/mrismanaziz/Man-Userbot")],
+                                "https://github.com/xzaliman/1024")],
                     ],
                     link_preview=False,
                 )
