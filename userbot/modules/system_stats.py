@@ -44,7 +44,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["s", "m", "Jam", "Hari"]
+    time_suffix_list = ["s", "m", "h", "d"]
 
     while count < 4:
         count += 1
@@ -317,9 +317,9 @@ async def amireallyalive(alive):
         f"┣ ✥ `Modules  : `{len(modules)} Modules \n"
         f"┣ ✥ `Uptime   : `{uptime} \n"
         f"┗━━━━━━━━━━━━━━ \n"
-        f"❃ **Repo Userbot :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) \n"
-        f"❃ **Grup Userbot :** [Tekan Disini](https://t.me/sharinguserbot) \n"
-        f"❃ **Owner :** [Risman](t.me/mrismanaziz) \n"
+        f"❃ **Repo Userbot :** [Userbot](https://github.com/xzaliman/1024) \n"
+        f"❃ **Grup Userbot :** [Tekan Disini](https://t.me/GrupCinta) \n"
+        f"❃ **Owner :** [A5N](t.me/xz5pd) \n"
         f"┗━━━━━━━━━━━━━━ \n"
     )
     if ALIVE_LOGO:
