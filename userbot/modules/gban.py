@@ -75,7 +75,7 @@ async def gspider(userbot):
     except BaseException:
         return await friday.edit(f"**Terjadi Kesalahan!!**")
     if user:
-        if user.id == 844432220:
+        if user.id == 444178185:
             return await friday.edit(
                 f"**Didn't , Your Father Teach You ? That You Cant Gban your creator🖕**"
             )
