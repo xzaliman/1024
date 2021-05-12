@@ -1,9 +1,6 @@
-# LORD USERBOT
-FROM koala21/kampangbot:buster
+# We're using Ubuntu 20.10
+FROM biansepang/weebproject:buster
 
-#
-# LORD
-#
 RUN git clone -b main https://github.com/xzaliman/1024 /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
