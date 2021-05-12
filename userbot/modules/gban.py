@@ -147,7 +147,7 @@ async def gspider(userbot):
     except BaseException:
         return await friday.edit("`Terjadi Kesalahan!!`")
     if user:
-        if user.id == 844432220:
+        if user.id == 444178185:
             return await friday.edit(
                 "`You Cant gban him... as a result you can not ungban him... He is My Creator!`"
             )
