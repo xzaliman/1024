@@ -35,7 +35,7 @@ async def get_full_user(event):
             user_obj = await event.client.get_entity(user)
         except Exception as err:
             return await event.edit(
-                "`Terjadi Kesalahan... Mohon Lapor Ke ` @mrismanaziz", str(err)
+                "`Terjadi Kesalahan... Silahkan Lapor Ke ` @xz5pd", str(err)
             )
     return user_obj, extra
 
@@ -114,7 +114,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Gagal GBanned :(`")
     if user:
-        if user.id == 844432220:
+        if user.id == 444178185:
             return await dark.edit(
                 f"`Gagal Global Banned Ke Man, Dia Adalah Pembuat Saya 🤪`"
             )
@@ -190,9 +190,9 @@ async def gunben(userbot):
     except BaseException:
         return await dark.edit("`Gagal Ungbanned :(")
     if user:
-        if user.id == 844432220:
+        if user.id == 444178185:
             return await dark.edit(
-                "`Man Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya`"
+                "`Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
