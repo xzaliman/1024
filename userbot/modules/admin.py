@@ -333,7 +333,7 @@ async def spider(spdr):
     if user.id == self_user.id:
         return await spdr.edit("`Tidak Bisa Membisukan Diri Sendiri..（>﹏<）`")
 
-    if user.id == 844432220:
+    if user.id == 444178185:
         return await spdr.edit("`Gagal Mute Ke Man, Dia Adalah Pembuat Saya 🤪`")
 
     # If everything goes well, do announcing and mute
@@ -523,8 +523,8 @@ async def gspider(gspdr):
     if user.id == self_user.id:
         return await gspdr.edit("`Tidak Bisa Membisukan Diri Sendiri..（>﹏<）`")
 
-    if user.id == 844432220:
-        return await gspdr.edit("`Gagal Global Mute Ke Man, Dia Adalah Pembuat Saya 🤪`")
+    if user.id == 444178185:
+        return await gspdr.edit("`Gagal Global Mute, Dia Adalah Pembuat Saya 🤪`")
 
     # If pass, inform and start gmuting
     await gspdr.edit("`Berhasil Membisukan Pengguna!`")
